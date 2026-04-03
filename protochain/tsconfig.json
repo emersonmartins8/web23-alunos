@@ -32,6 +32,12 @@
     // "noFallthroughCasesInSwitch": true,
     // "noPropertyAccessFromIndexSignature": true,
 
+    /* Modules */
+    //"module": "commonjs",
+    "rootDir": "./src/",
+
+    "outDir": "./dist",
+
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
