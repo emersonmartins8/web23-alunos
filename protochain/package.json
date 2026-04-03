@@ -8,12 +8,14 @@
     "compile": "npx tsc",
     "dev": "npx nodemon --watch './src/**/*.ts' --exec 'npx ts-node ./src/blockchain.ts' -e ts",
     "start": "node ./dist/blockchain.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "test": "jest"
+  
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@jest/globals": "^30.3.0",
     "@types/crypto-js": "^4.2.2",
     "@types/jest": "^30.0.0",
     "jest": "^30.3.0",
