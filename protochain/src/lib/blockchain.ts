@@ -6,8 +6,20 @@ import Block from './block';
 
 export default class Blockchain {
     blocks: Block[];
+    nextIndex: number = 0;
     
     constructor() {
-        this.blocks = [new Block(0,"","Genesis Block", "", "")];
+        this.blocks = [new Block(this.nextIndex,"","Genesis Block", "", "")];
+        this.nextIndex++;
     }
-}
+
+    addBlock(block: Block ):  boolean {
+        if (!block.isValid()) return false;{
+            this.blocks.push(block);
+            this.nextIndex++;
+            return true;
+        }   
+
+        )
+
+    }
